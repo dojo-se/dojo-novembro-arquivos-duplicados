@@ -1,0 +1,14 @@
+{
+  "name": "arquivos-duplicados-dojo-novembro-2017",
+  "version": "1.0.0",
+  "description": "Dojo Neoworking 2017/Novembro GDGARACAJU",
+  "main": "index.js",
+  "scripts": {
+    "start": "mocha tests --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
