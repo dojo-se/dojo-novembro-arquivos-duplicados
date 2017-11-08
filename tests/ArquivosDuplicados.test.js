@@ -16,3 +16,8 @@ describe('Verificando lista', function() {
     expect(ArquivosDuplicados()).to.equals([]);
   });   
 });
+describe('Verificando lista', function() {
+  it('Não vai passar :(', function() {
+    expect(ArquivosDuplicados()).to.equals([]);
+  });   
+});

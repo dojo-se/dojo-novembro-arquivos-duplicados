@@ -16,6 +16,13 @@ function percorreLista()
         
     }
 }
+function percorrerLista2(){
+    for(var i=1; i<arquivos.length; i++){
+        if(arquivos[0] == arquivos[i])
+        arquivos.pop(i);
+    }
+    
+}
 
 module.exports = init;
 
