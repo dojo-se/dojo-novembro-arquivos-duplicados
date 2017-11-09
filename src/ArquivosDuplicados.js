@@ -1,7 +1,7 @@
-var arquivos = ['aleatorio', 'aleatorio01', '','aleatorio'];
+var arquivos = ['a', 'b', 'c', 'a', 'b', 'a','a','t',null, '', 'b','b'];
 // 
 function init() {
-    return arquivos;
+    return percorrerLista2();
 }
 
 function percorreLista()
@@ -21,7 +21,8 @@ function percorrerLista2(){
         if(arquivos[0] == arquivos[i])
         arquivos.pop(i);
     }
-    
+    console.log(arquivos)
+    return arquivos;
 }
 
 module.exports = init;
