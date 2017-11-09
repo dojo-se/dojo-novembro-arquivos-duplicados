@@ -1,7 +1,8 @@
+
 var arquivos = ['a', 'b', 'c', 'a', 'b', 'a','a','t',null, '', 'b','b'];
 // 
 function init() {
-    return percorrerLista2();
+    return removeDuplicados();
 }
 
 function percorreLista()
@@ -16,13 +17,28 @@ function percorreLista()
         
     }
 }
-function percorrerLista2(){
-    for(var i=1; i<arquivos.length; i++){
-        if(arquivos[0] == arquivos[i])
-        arquivos.pop(i);
+function substituiDuplicados(){
+    for(var i=0; i<arquivos.length; i++){
+        if(arquivos[i] == arquivos[i+1])
+        arquivos[i]=null;
+
     }
+    
     console.log(arquivos)
     return arquivos;
+}
+
+function removeDuplicados(){
+var nova = [];
+ nova = arquivos.reduce(function (anterior,proximo){
+        if(anterior==proximo){
+           return proximo;
+        }
+    }, arquivos[0]);
+
+    console.log(nova);
+return nova;
+    
 }
 
 module.exports = init;
