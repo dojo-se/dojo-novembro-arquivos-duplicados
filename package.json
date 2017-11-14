@@ -4,7 +4,7 @@
   "description": "Dojo Neoworking 2017/Novembro GDGARACAJU",
   "main": "index.js",
   "scripts": {
-    "start": "mocha tests --recursive"
+    "start": "mocha tests --compilers js:babel-core/registerc"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +12,7 @@
     "chai": "^3.5.0"
   },
   "dependencies": {
-    "loadash": "^1.0.0",
+    "babel": "^6.23.0",
     "lodash": "^4.17.4"
   }
 }
